@@ -1,0 +1,14 @@
+.dropdown-input-section{
+    display: none;
+}
+
+.hidden-input{
+    display: block;
+    margin-bottom: 1%;
+}
+
+.input-block{
+    display: inline-block;
+    margin-bottom: 1%;
+}
+

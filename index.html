@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora Estimativa Cantos</h1>
+
+    <div>
+        <h2>1° Passo - Calcule a média recente dos times <button id="toggle-section">Calcular</button></h2>
+        <div id="dropdown-input-section" class="dropdown-input-section">
+            <h4>Coloque a quantidade de cantos dos últimos 5 jogos</h4>
+            <input id="jogo1" class="hidden-input" type="number">
+            <input id="jogo2" class="hidden-input" type="number">
+            <input id="jogo3" class="hidden-input" type="number">
+            <input id="jogo4" class="hidden-input" type="number">
+            <input id="jogo5" class="hidden-input" type="number">
+            <button id="calc">Calcular Média Recente</button>
+        </div>
+    </div>
+    <div>
+        <h2>2° Passo - Preencha os campos</h2>
+        <div class="input-block">
+            <label for="mediaRecente1">Média Recente Time 1</label>
+            <input id="mediaRecente1" class="hidden-input"type="number">
+            <label for="mediaRecente2">Média Recente Time 2</label>
+            <input id="mediaRecente2" class="hidden-input" type="number">
+        </div>
+        <div class="input-block">
+            <label for="mediaHomeTime1">Média Home Time 1</label>
+            <input id="mediaHomeTime1" class="hidden-input"type="number">
+            <label for="mediaCedeAwayTime2">Média Cede Away Time 2</label>
+            <input id="mediaCedeAwayTime2" class="hidden-input" type="number">
+        </div>
+        <div class="input-block">
+            <label for="mediaCedeHomeTime1">Média Cede Home Time 1</label>
+            <input id="mediaCedeHomeTime1" class="hidden-input"type="number">
+            <label for="mediaAwayTime2">Média Away Time 2</label>
+            <input id="mediaAwayTime2" class="hidden-input" type="number">
+        </div><br>
+        <button id="limparCampos">Limpar campos</button>
+        <button id="somarCampos">Somar campos</button>
+    </div>
+    <div>
+        <h2>3° Passo - Calcule a estimativa</h2>
+        <div class="input-block">
+            <label for="mediaRecenteCombinada">MRC</label>
+            <input class="hidden-input" id="mediaRecenteCombinada" type="number">
+        </div>
+        <div class="input-block">
+            <label for="media2">Parâmetro 2</label>
+            <input class="hidden-input" id="media2" type="number">
+        </div>
+        <div class="input-block">
+            <label for="media3">Parâmetro 3</label>
+            <input class="hidden-input" id="media3" type="number">
+        </div><br>
+        <button id="calculaEstimativa">Calcular estimativa</button>
+        <p id="resultado"></p>
+    </div>
+    <div class="footer">
+        <h4>Glossário</h4>
+        <p>MRC = Média Recente Combinada</p>
+        <p>Time de casa sempre vai ser o Time 1 e o visitante Time 2</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
